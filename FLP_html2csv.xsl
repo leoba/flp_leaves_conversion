@@ -9,7 +9,7 @@
     <xsl:template match="/">
         <!-- need to change column headers to field names from the template -->
         <!-- Change image_files to folder_base and script the creation of folders for the image files, then put the names of those folders in folder_base -->
-        <xsl:result-document href="test.csv">"Call Number/ID","image files","image labels","Repository Country","Repository City","Repository Name","Source Collection","Date (narrative)","Date (range) start","Date (range) end","Page dimensions","Note(s)","Support Material","Language","Place of origin","Script","Creator","Creator Role","Former Owner","FO Ref","Manuscript Name"
+        <xsl:result-document href="bibliophilly_leaves.csv">"Call Number/ID","image files","image labels","Repository Country","Repository City","Repository Name","Source Collection","Date (narrative)","Date (range) start","Date (range) end","Page dimensions","Note(s)","Support Material","Language","Place of origin","Script","Creator","Creator Role","Former Owner","FO Ref","Manuscript Name"
         <xsl:for-each select="//tr">
             <xsl:variable name="CallNumber" select="normalize-space(td[1])"/>
             
