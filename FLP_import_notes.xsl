@@ -15,8 +15,8 @@
     
     <xsl:variable name="notes_doc" select="document('FLP_full_notes.html')"/>
     
-    <xsl:template match="/">
-                    <xsl:apply-templates/>
+    <xsl:template match="/"><xsl:result-document href="FLP-Lewis-Master-Spreadsheet.html">
+                    <xsl:apply-templates/></xsl:result-document>
     </xsl:template>
     
     <xsl:template match="//tr/td[8]">
