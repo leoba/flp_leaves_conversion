@@ -39,6 +39,7 @@
                     <xsl:variable name="creator" select="td[13]/text()"/>
                     <xsl:variable name="creator_role" select="td[14]/text()"/>
                     <xsl:variable name="manuscript_name" select="td[25]/text()"/>"<xsl:value-of select="$CallNumber"/>","<xsl:value-of select="$imageFiles"/>","<xsl:value-of select="$imageLabels"/>","United States","Philadelphia","Free Library of Philadelphia","John Frederick Lewis Collection of European Manuscripts","<xsl:value-of select="$date_narrative"/>","<xsl:value-of select="$date_start"/>","<xsl:value-of select="$date_end"/>","<xsl:value-of select="$page_dimensions"/>","<xsl:value-of select="$notes"/>","Parchment","<xsl:value-of select="$language"/>","<xsl:value-of select="$place_of_origin"/>","<xsl:value-of select="$script"/>","<xsl:value-of select="$creator"/>","<xsl:value-of select="$creator_role"/>","Lewis, John Frederick, 1860-1932","http://viaf.org/viaf/63874811","<xsl:value-of select="$manuscript_name"/>"<xsl:text>
+                </xsl:text>"<xsl:value-of select="$CallNumber"/>","","","","","","","","","","","","","","","","","","","",""<xsl:text>
                 </xsl:text></xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
